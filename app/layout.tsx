@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     template: '%s | Ycode Docs'
   },
   description:
-    'Documentation for Ycode — the open-source visual website builder. Learn how to build, manage, and deploy websites with a powerful drag-and-drop editor.',
+    'Documentation for Ycode — the visual website builder. Available as open-source self-hosted or as Ycode Cloud at ycode.com. Build, manage, and deploy websites with a powerful drag-and-drop editor.',
   openGraph: {
     title: 'Ycode Documentation',
     description:
-      'Documentation for Ycode — the open-source visual website builder.',
+      'Documentation for Ycode — the visual website builder. Open source or Cloud.',
     siteName: 'Ycode Docs',
     type: 'website'
   }

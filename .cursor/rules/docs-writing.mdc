@@ -6,6 +6,14 @@ alwaysApply: false
 
 # Ycode Documentation Writing Guidelines
 
+## Important: Cloud vs Open Source
+
+Ycode has two versions: **Ycode Cloud** (managed, at ycode.com) and **Ycode Open Source** (self-hosted).
+Most features are identical. When writing docs:
+- Write feature docs to apply to BOTH versions (editor, CMS, forms, etc.)
+- Only call out Cloud vs Open Source differences in setup/deployment pages
+- Use Callout boxes to note when a section is Cloud-only or Open Source-only
+
 ## Source of Truth
 
 The Ycode product source code is at `/Users/ignas/Sites/opensource/`. When writing documentation, read the relevant source files to ensure accuracy. Key directories:

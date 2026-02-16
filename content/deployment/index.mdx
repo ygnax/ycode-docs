@@ -3,43 +3,49 @@ title: Deployment
 asIndexPage: true
 ---
 
+import { Callout } from 'nextra/components'
+
 # Deployment
 
-Ycode sites are self-hosted on Vercel with Supabase as the backend. You publish content from draft to live and manage domains and redirects.
+<Callout type="info">
+  **Using Ycode Cloud?** Deployment is handled automatically. Your site is hosted and managed by Ycode. You can still configure custom domains and redirects from your project settings.
+</Callout>
+
+This section covers deployment for the Open Source self-hosted version. Ycode deploys on Vercel with Supabase as the backend.
 
 ## Setup Wizard
 
-New projects use a setup wizard at `/ycode/welcome`. The wizard guides you through:
+New Open Source installations use a setup wizard at `/ycode/welcome`. The wizard guides you through:
 
-- Connecting to Vercel
-- Configuring Supabase
-- Initial project setup
+- Connecting to Supabase
+- Running database migrations
+- Creating your admin account
 
 Complete the wizard before publishing.
 
 ## Publishing Flow
 
-Content uses a draft-to-published workflow:
+Content uses a draft-to-published workflow. This works the same in both Cloud and Open Source:
 
 1. Edit pages, components, and CMS content in draft mode
 2. Preview changes in the editor
 3. Click **Publish** when ready
-4. Published content goes live on your deployment
+4. Published content goes live on your site
 
 Draft changes are not visible to visitors until you publish. You can unpublish to revert to the previous published state.
 
 ## Cache Revalidation
 
-Ycode supports cache revalidation for static and dynamic content. Configure a `REVALIDATE_SECRET` environment variable in Vercel. When content is published, Ycode triggers revalidation so the live site reflects updates quickly.
+For Open Source deployments, configure a `REVALIDATE_SECRET` environment variable in Vercel. When content is published, Ycode triggers revalidation so the live site reflects updates quickly.
 
 ## Custom Domains
 
-Connect your own domain to replace the default `*.ycode.dev` or `*.vercel.app` URL.
+Connect your own domain to your Ycode site.
 
-[Custom domains documentation](/deployment/custom-domains)
+[Custom domains documentation](/docs/deployment/custom-domains)
 
 ## Redirects
 
 Manage URL redirects for moved pages, vanity URLs, and legacy paths.
 
-[Redirects documentation](/deployment/redirects)
+[Redirects documentation](/docs/deployment/redirects)

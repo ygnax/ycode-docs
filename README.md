@@ -1,6 +1,6 @@
 # Ycode Documentation
 
-The official documentation for [Ycode](https://github.com/niceformal/ycode) — an open-source visual website builder.
+The official documentation for [Ycode](https://github.com/ygnax/ycode) — a visual website builder available as [Ycode Cloud](https://www.ycode.com) (managed) and [Open Source](https://github.com/ygnax/ycode) (self-hosted).
 
 Built with [Nextra](https://nextra.site/) (Next.js + MDX).
 

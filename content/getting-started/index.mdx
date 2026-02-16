@@ -3,26 +3,43 @@ title: Getting Started
 asIndexPage: true
 ---
 
+import { Callout } from 'nextra/components'
+
 # Getting Started
 
-Learn how to install, configure, and build your first site with Ycode.
+Learn how to set up Ycode and build your first website.
 
-Ycode is an open-source visual website builder powered by Next.js, React, Supabase, and Tailwind CSS. You can run it locally for development or deploy it to production on Vercel and Supabase.
+## Choose Your Path
 
-## Deployment Options
+Ycode is available as a managed cloud service or as open-source software you host yourself. The features are the same -- the only difference is how you get started.
 
-You have two ways to get Ycode running:
+### Ycode Cloud
 
-**1. Vercel deployment (recommended for production)**
+Sign up at [ycode.com](https://www.ycode.com) and start building immediately. No server setup, no environment variables, no deployments to manage. Ycode Cloud handles hosting, updates, and infrastructure for you.
 
-Deploy your fork of Ycode on Vercel and connect it to a Supabase project. This gives you a live site with automatic deployments from Git. Best for production sites and teams.
+Best for:
+- Teams and individuals who want to start quickly
+- Non-technical users
+- Projects where you prefer managed hosting
 
-**2. Local development**
+### Ycode Open Source
 
-Clone the repo, install dependencies, and run the dev server on your machine. Best for experimenting, contributing, or running Ycode on your own infrastructure.
+Fork the repository, deploy on your own Vercel + Supabase infrastructure, and have full control over the code and data. You can customize anything and contribute back to the project.
+
+Best for:
+- Developers who want full control
+- Custom deployments and self-hosting
+- Contributing to the project
+
+<Callout type="info">
+  The installation and configuration guides in this section cover the **Open Source** setup. If you are using **Ycode Cloud**, you can skip straight to [Your First Project](/docs/getting-started/first-project) after signing up.
+</Callout>
 
 ## What You Need
 
+**For Ycode Cloud:** Just a web browser and an account at [ycode.com](https://www.ycode.com).
+
+**For Ycode Open Source:**
 - Node.js 18 or later
 - A Supabase project (free tier works)
 - Git and npm
@@ -30,6 +47,6 @@ Clone the repo, install dependencies, and run the dev server on your machine. Be
 
 ## Next Steps
 
-1. [Installation](/docs/getting-started/installation) – Deploy to Vercel or run locally
-2. [Configuration](/docs/getting-started/configuration) – Set environment variables and Supabase
-3. [Your First Project](/docs/getting-started/first-project) – Create a page and use the editor
+1. [Installation](/docs/getting-started/installation) -- Deploy to Vercel or run locally (Open Source)
+2. [Configuration](/docs/getting-started/configuration) -- Environment variables and Supabase (Open Source)
+3. [Your First Project](/docs/getting-started/first-project) -- Create a page and use the editor (both Cloud and Open Source)

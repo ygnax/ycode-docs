@@ -2,11 +2,15 @@
 title: Installation
 ---
 
-import { Steps } from 'nextra/components'
+import { Callout, Steps } from 'nextra/components'
 
 # Installation
 
-This guide walks you through installing Ycode either on Vercel (recommended for production) or locally for development.
+<Callout type="info">
+  **Using Ycode Cloud?** You do not need to install anything. Go to [ycode.com](https://www.ycode.com), sign up, and you are ready to build. Skip to [Your First Project](/docs/getting-started/first-project).
+</Callout>
+
+This guide covers the Open Source self-hosted setup. You can deploy Ycode to Vercel (recommended for production) or run it locally for development.
 
 ## Prerequisites
 
@@ -21,7 +25,7 @@ This guide walks you through installing Ycode either on Vercel (recommended for 
 
 ### Step 1: Fork the repository
 
-Fork the [Ycode repository](https://github.com/niceformal/ycode) on GitHub. This creates a copy under your account that you can deploy.
+Fork the [Ycode repository](https://github.com/ygnax/ycode) on GitHub. This creates a copy under your account that you can deploy.
 
 ### Step 2: Deploy on Vercel
 
@@ -35,7 +39,6 @@ Fork the [Ycode repository](https://github.com/niceformal/ycode) on GitHub. This
 1. Go to [supabase.com](https://supabase.com) and create a new project.
 2. Wait for the project to finish provisioning.
 3. Go to **Settings > API** and copy:
-   - Project URL (or use it to derive the connection string)
    - `anon` public key
    - `service_role` secret key
 4. Go to **Settings > Database** and copy the connection string. Use the **Transaction Pooler** connection method (port 6543).
@@ -44,10 +47,10 @@ Fork the [Ycode repository](https://github.com/niceformal/ycode) on GitHub. This
 
 1. In your Vercel project, go to **Settings > Environment Variables**.
 2. Add the required variables (see [Configuration](/docs/getting-started/configuration) for the full list):
-   - `SUPABASE_PUBLISHABLE_KEY` – your Supabase anon/public key
-   - `SUPABASE_SECRET_KEY` – your Supabase service role key
-   - `SUPABASE_CONNECTION_URL` – PostgreSQL connection string (Transaction Pooler)
-   - `SUPABASE_DB_PASSWORD` – your database password
+   - `SUPABASE_PUBLISHABLE_KEY` -- your Supabase anon/public key
+   - `SUPABASE_SECRET_KEY` -- your Supabase service role key
+   - `SUPABASE_CONNECTION_URL` -- PostgreSQL connection string (Transaction Pooler)
+   - `SUPABASE_DB_PASSWORD` -- your database password
 
 ### Step 5: Redeploy
 
@@ -69,7 +72,7 @@ Trigger a new deployment so Vercel picks up the environment variables. Use **Dep
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/niceformal/ycode.git
+git clone https://github.com/ygnax/ycode.git
 cd ycode
 ```
 
@@ -105,5 +108,5 @@ npm run dev
 
 ## Next Steps
 
-- [Configuration](/docs/getting-started/configuration) – Environment variables and Supabase setup
-- [Your First Project](/docs/getting-started/first-project) – Create a page and use the editor
+- [Configuration](/docs/getting-started/configuration) -- Environment variables and Supabase setup
+- [Your First Project](/docs/getting-started/first-project) -- Create a page and use the editor
